@@ -20,12 +20,12 @@ c2=sin(2*pi*523*t);
 nol = [zeros(size(t))];     %Mske empty space
 nada1=[g,a,b,b,b,b,b,g,g,b,a,nol,nol,g,fkres,...
     g,a,a,a,a,a,fkres,fkres,a,g,nol,nol,e,fkres,g,g,nol,...
-    e,g,g,nol,e,g,g,nol,g,g,fkres,g,a,a,g,a,b,nol,nol];
+    e,g,g,nol,e,g,g,nol,g,g,fkres,g,a,a,g,a,b,nol,nol];             %Melody of the song
 nada2=[g,a,b,b,b,b,b,g,g,b,a,nol,nol,g,fkres,g,a,a,a,a,a,fkres,...
     fkres,a,g,nol,nol,e,fkres,g,g,nol,e,...
-    g,g,nol,e,g,g,nol,g,g,fkres,e,fkres,g,nol];
-lagu=[nada1,nada2];
-sound(lagu,Fs);
+    g,g,nol,e,g,g,nol,g,g,fkres,e,fkres,g,nol];                     %Melody of the song
+lagu=[nada1,nada2];     %Join both melodies
+sound(lagu,Fs);         %Command to transform the frequencies into sound that you can hear
 %wavwrite(lagu,Fs,'waktuyangsalah.wav') use this command for earlier than
 %R2012b
-audiowrite('waktuyangsalah.wav',lagu,Fs)
+audiowrite('waktuyangsalah.wav',lagu,Fs)      %Command to save the spund in WAV format
